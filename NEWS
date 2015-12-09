@@ -1,2 +1,5 @@
+deco-archive-1.7:
+	Support the .apk alias for .zip archives
+
 deco-archive-1.6.1:
 	Move to Git(Hub)

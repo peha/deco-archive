@@ -11,6 +11,7 @@ Extension | Runtime dependencies
      .ace | `unace`
      .alz | `unalz`
      .ape | `MAC.exe`+`wine`
+     .apk | `unzip`
       .ar | `ar`
      .arc | `arc`
      .arj | `arj`

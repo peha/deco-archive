@@ -45,7 +45,7 @@ FORMATS = \
 	'tar\.xz' 'txz' \
 	'tlz' \
 	'xz' \
-	'zip' 'cbz' 'ear' 'ipsw' 'jar' 'odc' 'odf' 'odg' 'odi' 'odm' 'odp' 'ods' 'odt' 'otc' 'otf' 'otg' 'oth' 'oti' 'otp' 'ots' 'ott' 'oxt' 'pk3' 'pk4' 'wsz' 'xpi' \
+	'zip' 'apk' 'cbz' 'ear' 'ipsw' 'jar' 'odc' 'odf' 'odg' 'odi' 'odm' 'odp' 'ods' 'odt' 'otc' 'otf' 'otg' 'oth' 'oti' 'otp' 'ots' 'ott' 'oxt' 'pk3' 'pk4' 'wsz' 'xpi' \
 	'zoo'
 
 # deleted from $(LOCATION) before installation
