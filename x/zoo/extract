@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec zoo x${Verbose-q} "$1"

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec cpio -idmu${Verbose+v} <"$1"

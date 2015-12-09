@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec wine "C:\\Program Files\\Monkey's Audio\\MAC.exe" "$1" "$Name.wav" -d

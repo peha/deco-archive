@@ -1,0 +1,4 @@
+#!/bin/sh
+
+type unlzma >/dev/null 2>&1 && exec unlzma -kf${Verbose+v} "$1"
+exec lzma d "$1" "$Name"

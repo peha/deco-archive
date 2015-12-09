@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+lrunzip -q "$1"
+tar x${Verbose+vv}f "./$Name.tar"
+rm -f "./$Name.tar"

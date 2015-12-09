@@ -1,0 +1,20 @@
+#!/bin/sh
+
+type rpm2cpio >/dev/null 2>&1 ||
+{
+decompress()
+	{
+	dd ibs=$2 skip=1 if="$1" 2>/dev/null | $3 -q$4
+	}
+
+rpm2cpio()
+	{
+	offset=`rpmoffset <"$1"` &&
+	for type in gunzip bunzip2; do
+		decompress "$1" "$offset" $type t 2>/dev/null && break
+	done &&
+	decompress "$1" "$offset" $type c
+	}
+}
+
+rpm2cpio "$1" | cpio -idmu${Verbose+v}

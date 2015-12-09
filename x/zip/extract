@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec unzip -o${Verbose-q} "$1"

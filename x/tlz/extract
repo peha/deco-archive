@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if lzip -tq "$1" 2>/dev/null; then
+	lzip -dc "$1"
+elif type lzcat >/dev/null 2>&1; then
+	lzcat "$1"
+else
+	lzma d "$1" -so
+fi | tar x${Verbose+vv}

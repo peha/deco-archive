@@ -1,0 +1,3 @@
+#!/bin/sh
+
+lzop -dc "$1" | cpio -idmu${Verbose+v}

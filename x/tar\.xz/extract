@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xzcat "$1" | tar x${Verbose+vv}

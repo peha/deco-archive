@@ -1,0 +1,3 @@
+#!/bin/sh
+
+7za x -l -so "$1" | tar x${Verbose+vv}

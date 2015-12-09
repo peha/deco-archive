@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xzcat "$1" | cpio -idmu${Verbose+v}

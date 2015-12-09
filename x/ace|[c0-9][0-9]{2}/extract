@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec unace x -o "$1"

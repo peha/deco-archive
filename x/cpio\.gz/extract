@@ -1,0 +1,3 @@
+#!/bin/sh
+
+gzip -dc "$1" | cpio -idmu${Verbose+v}

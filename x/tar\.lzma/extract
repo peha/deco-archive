@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if type lzcat >/dev/null 2>&1; then
+	lzcat "$1"
+else
+	lzma d "$1" -so
+fi | tar x${Verbose+vv}
